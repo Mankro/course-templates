@@ -82,12 +82,386 @@ the contents of the directive define the choices, the correct solution, and
 possible hints. The hints are targeted to specific choices and they are shown
 after answering. See the example below.
 
+**TESTING LINKS**: 
+
+* chapter in the same module :doc:`06_languages`, :ref:`section in multilang <multilangref>`
+  * exercise: :ref:`multilang quiz <refmultilangquiz>`
+* chapter in the same module and nested directory: :doc:`/m01_introduction/material/mychapter`, :ref:`refnestedm01`
+  * exercise: :ref:`quiz in m01 nested chapter <refnestedimg>`
+* chapter in another module: :doc:`/m02_programming_exercises/02_hello_world`, :ref:`chapter hello world <refhelloworld>`
+  * exercise: :ref:`exercise hello python <refhellopython>`
+* chapter in another module and nested directory: :doc:`/m02_programming_exercises/material/somechapter`, :ref:`refnestedm02`
+  * exercise: :ref:`quiz in m02 nested chapter <refnestedimgm02>`
+
+.. image:: /images/apluslogo.png
+
+
 Examples
 --------
 
-.. questionnaire:: questionnaire_demo 20
+.. questionnaire:: questionnaire_test_pick_random A
+  :title: Test pick randomly in a questionnaire
+  :submissions: 50
+
+  **TESTING LINKS**: 
+
+  * chapter in the same module :doc:`06_languages`, :ref:`section in multilang <multilangref>`
+    * exercise: :ref:`multilang quiz <refmultilangquiz>`
+  * chapter in the same module and nested directory: :doc:`/m01_introduction/material/mychapter`, :ref:`refnestedm01`
+    * exercise: :ref:`quiz in m01 nested chapter <refnestedimg>`
+  * chapter in another module: :doc:`/m02_programming_exercises/02_hello_world`, :ref:`chapter hello world <refhelloworld>`
+    * exercise: :ref:`exercise hello python <refhellopython>`
+  * chapter in another module and nested directory: :doc:`/m02_programming_exercises/material/somechapter`, :ref:`refnestedm02`
+    * exercise: :ref:`quiz in m02 nested chapter <refnestedimgm02>`
+
+  .. image:: /images/apluslogo.png
+
+
+  .. pick-any:: 10
+
+    what is 1 + 3?
+    When :math:`(x + 1)^3 = 27`, what is :math:`x`?
+
+    a. 9
+    *b. 4
+    c. 3
+    d. 1
+
+  .. pick-any:: 10
+
+    what is 2 + 3?
+    When :math:`(x + 1)^3 = 27`, what is :math:`x`?
+
+    a. 9
+    b. 3
+    *c. 5
+
+  .. pick-any:: 10
+
+    what is 3 + 3?
+
+    *a. 6
+    b. 9
+    c. 3
+
+  .. pick-any:: 10
+
+    what is 4 + 3?
+
+    a. 9
+    b. 8
+    c. 3
+    *d. 7
+
+  .. pick-one:: 10
+
+    what is 5 + 3?
+
+    a. 9
+    b. 3
+    c. 10
+    d. 7
+    *e. 8
+    f. 1
+    g. 2
+
+  .. pick-one:: 10
+
+    what is 6 + 3?
+
+    a. 1
+    b. 10
+    c. 3
+    d. 0
+    e. 7
+    *f. 9
+    g. 8
+
+.. questionnaire:: questionnaire_test_pick_random2 A
+  :title: Test pick randomly in a questionnaire 2
+  :submissions: 50
+  :pick_randomly: 4
+
+  .. pick-any:: 10
+
+    what is 1 + 2?
+    When :math:`(x + 1)^3 = 27`, what is :math:`x`?
+
+    a. 9
+    b. 4
+    *c. 3
+    d. 1
+
+  .. pick-any:: 10
+
+    what is 2 + 2?
+    When :math:`(x + 1)^3 = 27`, what is :math:`x`?
+
+    a. 9
+    b. 3
+    c. 5
+    *d. 4
+
+  .. pick-any:: 10
+
+    what is 3 + 2?
+
+    *a. 5
+    b. 9
+    c. 3
+
+  .. pick-any:: 10
+
+    what is 4 + 2?
+
+    a. 9
+    b. 8
+    *c. 6
+    d. 7
+
+  .. pick-one:: 10
+
+    what is 5 + 2?
+
+    a. 9
+    b. 3
+    c. 10
+    *d. 7
+    e. 8
+    f. 1
+    g. 2
+
+  .. pick-one:: 10
+
+    what is 6 + 2?
+
+    a. 1
+    b. 10
+    c. 3
+    d. 0
+    e. 7
+    f. 9
+    *g. 8
+
+.. questionnaire:: test_random_question
+  :submissions: 40
+  :points-to-pass: 0
+
+  .. pick-any:: 10
+    :randomized: 5
+    :correct-count: 3
+    :partial-points:
+
+    Which of the following are **yellow**?
+
+    *a. butter
+    *b. banana
+    c. sky
+    d. soil
+    e. orange
+    f. kiwi
+    g. green apple
+    h. red apple
+    i. watermelon
+    j. chicken wings
+    k. barbeque pork
+    l. cake
+    m. strawberry
+    n. blueberry
+    o. raspberry
+    *p. sun
+    *q. yellow taxi
+    r. British black taxi
+    s. Computer peripherals
+    *t. Homer Simpson
+    *u. lemon
+    
+    a § yes, butter is yellow
+    b § yes, banana is yellow
+    p § yes, sun is yellow
+    q § yes, yellow taxi is yellow
+    t § yes, Homer is yellow
+    u § yes, lemon is yellow
+    c § no, sky is blue
+    l § no, cake is white
+    o § no, raspberry is red
+    d § no, soil is brown
+    m § no, strawberry is red
+
+  .. pick-any:: 10
+    :randomized: 5
+    :correct-count: 1
+    :partial-points:
+
+    Which of the following are **red**?
+
+    a. butter
+    b. banana
+    c. sky
+    d. soil
+    e. orange
+    f. kiwi
+    g. green apple
+    *h. red apple
+    *i. watermelon (in the inside)
+    j. chicken wings
+    k. barbeque pork
+    l. cake
+    *m. strawberry
+    n. blueberry
+    *o. raspberry
+    p. sun
+    q. yellow taxi
+    r. British black taxi
+    s. Computer peripherals
+    t. Homer Simpson
+    u. lemon
+
+
+.. questionnaire:: test_random_question2
+  :submissions: 40
+  :points-to-pass: 0
+
+  .. pick-any:: 10
+    :randomized: 5
+    :correct-count: 3
+    :partial-points:
+    :required:
+
+    Which of the following are **yellow**?
+
+    *a. y1
+    *b. y2
+    *c. y3
+    *d. y4
+    *e. y5
+    *f. y6
+    *g. y7
+    *h. y8
+    *i. y9
+    j. n1
+    k. n2
+    l. n3
+    m. n4
+    n. n5
+    o. n6
+    p. n7
+    q. n8
+    r. n9
+    s. n10
+    t. n11
+    u. n12
+
+  .. pick-any:: 10
+    :randomized: 5
+    :correct-count: 3
+    :partial-points:
+    :required:
+
+    Which of the following are **red**?
+
+    *a. y1
+    *b. y2
+    *c. y3
+    *d. y4
+    *e. y5
+    *f. y6
+    *g. y7
+    *h. y8
+    *i. y9
+    j. n1
+    k. n2
+    l. n3
+    m. n4
+    n. n5
+    o. n6
+    p. n7
+    q. n8
+    r. n9
+    s. n10
+    t. n11
+    u. n12
+
+
+.. questionnaire:: mytest A
+  :title: Testing new features in a questionnaire
+  :submissions: 4
+  :points-to-pass: 0
+
+  This is a questionnaire number 1 that grants at maximum 70 points
+  of difficulty A. Students can make at most 4 submissions.
+  This exercise is marked passed when 0 points are reached (the default).
+
+  .. pick-one:: 10
+    :required:
+
+    What is 1+1?
+
+    a. 1
+    *b. 2
+    c. 3
+
+    !b § Count again!
+    c § Too much
+
+  (Hints can be included or omitted in any question.)
+
+  .. pick-one:: 10
+    :required:
+    :dropdown:
+
+    What is 1+2?
+
+    +0. 0
+    1. 1
+    2. 2
+    *3. 3
+
+  .. pick-any:: 10
+
+    Pick the two **first**.
+
+    *a. this is the **first**
+    *b. this is the **second**
+    c. this is the **third**
+
+  .. freetext:: 30 string-ignorews-ignorequotes
+    :length: 10
+
+    A textual input can be compared with the model solution as integer, float or string.
+    Here the correct answer is "test". Surrounding quotes are ignored in the solution
+    as well as whitespace everywhere (modifiers ignorequotes and ignorews).
+
+    test
+    !test § Follow the instruction.
+
+  .. freetext:: 10 regexp
+
+    This question accepts either "red" or "blue" as the correct answer.
+    The model solution is a regular expression.
+
+    red|blue
+
+
+.. questionnaire:: questionnaire_demo
   :title: A simple multiple-choice questionnaire
-  :submissions: 3
+  :submissions: 6
+  :allow-assistant-grading: true
+  :allow-assistant-viewing: false
+
+  .. pick-one:: 10
+    :dropdown:
+
+    Subdirective ``pick-one`` defines a single-choice question.
+    When :math:`(x + 1)^3 = 27`, what is :math:`x`?
+
+    a. 9
+    *b. **2**
+    +c. <script>alert(3);</script>
+
+    a § Not quite. Remember the cube root.
+    b § Correct!
+    c § Rather close. Remember that you can add or subtract the same number to the both sides of the equation.
 
   .. pick-one:: 10
 
@@ -95,12 +469,10 @@ Examples
     When :math:`(x + 1)^3 = 27`, what is :math:`x`?
 
     a. 9
-    *b. 2
-    c. 3
-
-    a § Not quite. Remember the cube root.
-    b § Correct!
-    c § Rather close. Remember that you can add or subtract the same number to the both sides of the equation.
+    *b. **2**
+    +c. <script>alert(4);</script>
+    
+    c § That is very wrong!
 
   .. pick-any:: 10
 
@@ -110,9 +482,9 @@ Examples
 
     a. 4
     *b. an integer
-    *c. 3
+    +*c. 3
     d. an irrational number
-    e. -3
+    +e. -3
     *f. -5
 
     a § Rather close. Remember that you can add or subtract the same number to the both sides of the equation.
@@ -127,7 +499,8 @@ input.
 
 .. questionnaire:: questionnaire_text_demo 15
   :title: A simple multiple-choice questionnaire
-  :submissions: 3
+  :submissions: 2
+  :reveal-model-at-max-submissions: False
 
   .. freetext:: 5
     :length: 10
@@ -141,6 +514,7 @@ input.
 
   .. freetext:: 5 int
     :length: 7
+    :height: 5
 
     The answer can be a number, an integer. What is :math:`3 + 8`?
 
@@ -248,6 +622,24 @@ numbers beginning with 0.014, 0.015, or 0.016.
     ``3.141`` and zero or more digits after that.
 
     ^3\.141\d*$
+
+
+.. questionnaire:: feedback
+  :title: Test feedback
+  :submissions: 10
+  :feedback:
+
+  .. freetext::
+    :length: 7
+    :required:
+
+    Did you like this chapter?
+
+  .. freetext::
+    :length: 7
+    :required:
+
+    Other comments?
 
 
 Additional information

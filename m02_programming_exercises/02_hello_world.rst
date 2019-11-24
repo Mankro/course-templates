@@ -11,10 +11,18 @@ This is the configuration file ``docker-compose.yml``:
 .. include:: ../docker-compose.yml
   :code: yaml
 
+.. _refhelloworld:
+
 Note: acos is an optional component used for interactive exercises.
 
 .. submit:: python 10
   :config: exercises/hello_python/config.yaml
+  
+  Hello Python exercise description in **RST**.
+  
+  .. _refhellopython:
+  
+  Foobar.
 
 .. submit:: scala 10
   :config: exercises/hello_scala/config.yaml

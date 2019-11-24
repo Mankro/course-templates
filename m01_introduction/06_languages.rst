@@ -21,6 +21,7 @@ programming languages is a different challenge).
 This approach is recommended for courses that aim to
 use identical study units and grading in all language versions.
 
+.. _multilangref:
 
 Structure
 ---------
@@ -120,6 +121,15 @@ Recap
 
 .. questionnaire:: 1 2
   :title: Multilingual course recap
+
+  .. _refmultilangquiz:
+  
+  Multilang quiz
+  
+  .. image:: /images/apluslogo.png
+    :alt: aplus logo
+
+  Onward to the questions.
 
   .. pick-one:: 1
 

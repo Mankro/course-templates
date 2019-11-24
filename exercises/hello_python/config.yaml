@@ -11,6 +11,9 @@ files:
   - field: file1
     name: functions.py
 
+template_files:
+  - _static/hello_python.py
+
 container:
   image: apluslms/grade-python:3.6-2.7
   mount: exercises/hello_python
