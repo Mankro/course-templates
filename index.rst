@@ -1,3 +1,7 @@
+:questionnaire-default-reveal-model-at-max-submissions: False
+:questionnaire-default-show-model: true
+
+
 A sample course
 ===============
 

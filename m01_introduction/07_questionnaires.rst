@@ -85,12 +85,19 @@ after answering. See the example below.
 **TESTING LINKS**: 
 
 * chapter in the same module :doc:`06_languages`, :ref:`section in multilang <multilangref>`
+
   * exercise: :ref:`multilang quiz <refmultilangquiz>`
+
 * chapter in the same module and nested directory: :doc:`/m01_introduction/material/mychapter`, :ref:`refnestedm01`
+
   * exercise: :ref:`quiz in m01 nested chapter <refnestedimg>`
+
 * chapter in another module: :doc:`/m02_programming_exercises/02_hello_world`, :ref:`chapter hello world <refhelloworld>`
+
   * exercise: :ref:`exercise hello python <refhellopython>`
+
 * chapter in another module and nested directory: :doc:`/m02_programming_exercises/material/somechapter`, :ref:`refnestedm02`
+
   * exercise: :ref:`quiz in m02 nested chapter <refnestedimgm02>`
 
 .. image:: /images/apluslogo.png
@@ -106,12 +113,19 @@ Examples
   **TESTING LINKS**: 
 
   * chapter in the same module :doc:`06_languages`, :ref:`section in multilang <multilangref>`
+
     * exercise: :ref:`multilang quiz <refmultilangquiz>`
+
   * chapter in the same module and nested directory: :doc:`/m01_introduction/material/mychapter`, :ref:`refnestedm01`
+
     * exercise: :ref:`quiz in m01 nested chapter <refnestedimg>`
+
   * chapter in another module: :doc:`/m02_programming_exercises/02_hello_world`, :ref:`chapter hello world <refhelloworld>`
+
     * exercise: :ref:`exercise hello python <refhellopython>`
+
   * chapter in another module and nested directory: :doc:`/m02_programming_exercises/material/somechapter`, :ref:`refnestedm02`
+
     * exercise: :ref:`quiz in m02 nested chapter <refnestedimgm02>`
 
   .. image:: /images/apluslogo.png
@@ -287,6 +301,7 @@ Examples
     o § no, raspberry is red
     d § no, soil is brown
     m § no, strawberry is red
+    %100% § You got full points!
 
   .. pick-any:: 10
     :randomized: 5
@@ -402,6 +417,7 @@ Examples
     c. 3
 
     !b § Count again!
+    %100% § You got full points!
     c § Too much
 
   (Hints can be included or omitted in any question.)
@@ -574,7 +590,7 @@ else).
   answers of one type and three identical answers of another type.
 
 
-.. questionnaire:: questionnaire_text_demo_2 10
+.. questionnaire:: questionnaire_text_demo_2
 
   .. freetext:: 5 string-ignorews-ignorequotes
     :length: 10
@@ -597,6 +613,33 @@ else).
     unique characters.
 
     aio
+
+  .. freetext:: 5 subdiff
+
+    Subdiff question. Helium ___ two hydrogen atoms.
+    
+    consists of|contains
+    contain of § Wrong tense!
+    regexp:^(is|are|makes?)$ § Totally wrong! Use a better verb.
+    !regexp:^con § You did not start with ``con``.
+
+  .. freetext:: 5 subdiff-requirecase
+
+    Subdiff question with requirecase. Helium ___ two hydrogen atoms.
+    
+    consists of|contains
+    contain of § Wrong tense!
+    regexp:is|are|makes? § Totally wrong! Use a better verb.
+    !regexp:^con § You did not start with ``con``.
+
+  .. freetext:: 5 string-requirecase
+  
+    string question with regexp feedback. Write "test".
+    
+    test
+    regexp:[TEST]+ § Do not use capitalized letters!
+    tests § You have an extra ``s`` at the end!
+    regexp:t[abc]+est § You wrote some abc characters in the middle.
 
 
 Regular expressions are useful when there are multiple solutions, or when

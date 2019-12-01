@@ -15,3 +15,8 @@ Introduction to developing course on A-Plus learning management service.
   07_questionnaires
   material/mychapter
   enrollment_en
+
+.. aplusmeta::
+  :open-time: 2019-09-01 12:00
+  :close-time: 2019-11-30 12:00
+
