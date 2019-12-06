@@ -4,6 +4,18 @@ Personalized exercises
 General description
 -------------------
 
+.. point-of-interest:: Example in m02-03
+  :id: expoi3
+  :not_in_slides:
+
+  My favourite fruit:
+
+  * Orange
+  * Apple
+  * Banana
+  * Mango
+  * Watermelon
+
 Personalized exercises contain some parts that are not the same for every
 student. This is useful for preventing plagiarism: the students cannot simply
 copy their answers or solutions from their peers.

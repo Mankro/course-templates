@@ -35,6 +35,22 @@ used on some computer science courses on Aalto University.
   `Sphinx <http://www.sphinx-doc.org>`_ compiles bunch of RST files into
   HTML. We will come into writing RST files later.
 
+.. point-of-interest:: Example in m01-01
+  :id: expoi1
+  :next: expoi3
+
+  Some text here and a list:
+
+  * item 1
+  * item 2
+  
+  ===== =====
+  Col A Col B
+  ===== =====
+  daa   foo
+  baz   bar
+  ===== =====
+
 
 Getting started
 ---------------

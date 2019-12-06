@@ -193,3 +193,47 @@ files that you will need them. If your course needs software which is
 not yet available as containers for A+, see the
 `A-plus LMS Github page <https://apluslms.github.io/>`_ for
 contact information.
+
+.. questionnaire:: test_feedback_points 4
+  :title: Test feedback questionnaire
+  :submissions: 30
+  :feedback:
+
+  .. pick-one:: 2
+    :required:
+
+    Subdirective ``pick-one`` defines a single-choice question.
+    When :math:`(x + 1)^3 = 27`, what is :math:`x`?
+
+    a. 9
+    b. 2
+    c. 3
+
+  .. pick-any:: 2
+    :required:
+
+    Subdirective ``pick-any`` defines a multiple-choice question.
+
+    When :math:`(x + 1)^2 = 16`, what is :math:`x`?
+
+    a. 4
+    b. an integer
+    c. 3
+    d. an irrational number
+    e. -3
+    f. -5
+
+  .. pick-any:: 0
+    :required:
+    
+    You must select "yes".
+    
+    a. Yes
+
+  .. pick-any::
+    :required:
+    
+    You must select "yes".
+    
+    a. Yes
+

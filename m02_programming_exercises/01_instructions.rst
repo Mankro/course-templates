@@ -21,6 +21,50 @@ Writing programming exercises
 This section is an introduction to creating programming exercises
 in A+.
 
+..  :bgimg: /images/apluslogo.png
+
+.. point-of-interest:: Example in m02-01
+  :id: expoi2
+
+
+  Some text here and a list:
+
+  * item 1
+  * item 2
+
+
+.. point-of-interest:: Try math
+  :id: instr2
+  
+  Subheading in my body
+  ---------------------
+
+  Foo bar. Hadh qwehsd asdasdio jioasd.
+  Mathematics like :math:`a + b * 6` and a display equation next:
+  
+  .. math::
+  
+    x = y^2 - z_2
+
+
+.. point-of-interest:: Try code block
+  :id: instr3
+
+  Python code block next:
+
+  .. code-block:: python
+
+    a = 6
+    c = 2 * a + 7
+    print(c + 2)
+
+.. point-of-interest:: My image here
+  :id: instr4
+  
+  This is an image. The image was removed because it did not work.
+  
+  .. image:: /images/apluslogo.png
+
 
 Writing a base code and unit tests
 ----------------------------------

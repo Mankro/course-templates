@@ -14,3 +14,4 @@ Other content is not visible in A+.
   06_graphics
   07_web_frontend
   material/somechapter
+  08_ajax_exercise

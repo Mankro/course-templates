@@ -1,6 +1,71 @@
 Hello Worlds
 ============
 
+My hello python body heading
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Normal body text. **Long sentence** asdu asduias uyqwe8uy asd
+qwe qwesdfsdf iasdiuyasdiy oasdoasduioas uioasuioasdio.
+
+Paragraph 2 *begins here*. Asoiduaos udoausd ouasoiduiou qweiqwye.
+**N**\ th number is some *i*\ th something.
+
+Subheading in my body
+---------------------
+
+Foo bar. Hadh qwehsd asdasdio jioasd.
+
+Here we try the admonitions.
+
+.. admonition:: Title of info box
+  :class: info
+
+  Wonderful blue background. Write an algorithm to compute :math:`x` in
+  
+  .. math::
+  
+    x = y^2 - z_2
+
+Try a simple table.
+
+===== ===== =====
+Col 1 Col 2 Col 3
+===== ===== =====
+Y     N     Y/N
+XC    ioio  Kolk
+===== ===== =====
+
+Here is some code::
+  
+  a = 3
+  b = a * 4
+  print("it is", b)
+  
+Try the code-block directive.
+
+.. code-block:: python
+
+  a = 6
+  c = 2 * a + 7
+  print(c + 2)
+
+Try to link to another page in this course with the ``ref`` role.
+Here is the link to the Acos :ref:`instructions <acos-docker-mac-windows>`.
+
+Mathematics like :math:`a + b * 6` and a display equation next:
+
+.. math::
+
+  x = \frac{-b + \sqrt{b^2 - 4 * a * c}}{2 * a}
+
+Some A+ logo to test the image directive.
+
+.. image:: /images/apluslogo.png
+
+The end of the body.
+
+---------------------------------------------------------------------
+
 This chapter includes three exercises on one page. Questionnaires and
 submission forms can exist anywhere and as many on one page as required.
 The automatic assessment of a submission is defined in the referenced
@@ -15,6 +80,7 @@ This is the configuration file ``docker-compose.yml``:
 
 Note: acos is an optional component used for interactive exercises.
 
+
 .. submit:: python 10
   :config: exercises/hello_python/config.yaml
   
@@ -24,8 +90,79 @@ Note: acos is an optional component used for interactive exercises.
   
   Foobar.
 
+  My hello python body heading
+  ----------------------------
+  
+  Normal body text. **Long sentence** asdu asduias uyqwe8uy asd
+  qwe qwesdfsdf iasdiuyasdiy oasdoasduioas uioasuioasdio.
+
+  Paragraph 2 *begins here*. Asoiduaos udoausd ouasoiduiou qweiqwye.
+  **N**\ th number is some *i*\ th something.
+
+  Subheading in my body
+  ---------------------
+
+  Foo bar. Hadh qwehsd asdasdio jioasd.
+
+  Here we try the admonitions.
+  
+  .. _test-label-in-submit:
+
+  .. admonition:: Title of info box
+    :class: info
+
+    Wonderful blue background. Write an algorithm to compute :math:`x` in
+    
+    .. math::
+    
+      x = y^2 - z_2
+
+  Try a simple table.
+
+  ===== ===== =====
+  Col 1 Col 2 Col 3
+  ===== ===== =====
+  Y     N     Y/N
+  XC    ioio  Kolk
+  ===== ===== =====
+
+  Here is some code::
+    
+    a = 3
+    b = a * 4
+    print("it is", b)
+    
+  Try the code-block directive.
+
+  .. code-block:: python
+
+    a = 6
+    c = 2 * a + 7
+    print(c + 2)
+
+  Try to link to another page in this course with the ``ref`` role.
+  Here is the link to the Acos :ref:`instructions <acos-docker-mac-windows>`.
+
+  Mathematics like :math:`a + b * 6` and a display equation next:
+
+  .. math::
+
+    x = \frac{-b + \sqrt{b^2 - 4 * a * c}}{2 * a}
+
+  Some A+ logo to test the image directive.
+
+  .. image:: /images/apluslogo.png
+
+  The end of the body.
+
+
 .. submit:: scala 10
   :config: exercises/hello_scala/config.yaml
+  
+  Daaa
+  ----
+  
+  Some submit body in hello scala! Try ref :ref:`here <test-label-in-submit>`.
 
 .. submit:: javascript 10
   :config: exercises/hello_javascript/config.yaml

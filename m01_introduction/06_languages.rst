@@ -155,3 +155,40 @@ Recap
 
     d § Some configurations can be omitted in favor of implicit values from the default language.
     !e § A-plus does not support alternative limits based on language.
+
+.. questionnaire:: test_feedback_zerop
+  :title: Test feedback questionnaire
+  :submissions: 30
+  :feedback:
+
+  .. pick-one::
+    :required:
+
+    Subdirective ``pick-one`` defines a single-choice question.
+    When :math:`(x + 1)^3 = 27`, what is :math:`x`?
+
+    a. 9
+    b. 2
+    c. 3
+
+  .. pick-any::
+    :required:
+
+    Subdirective ``pick-any`` defines a multiple-choice question.
+
+    When :math:`(x + 1)^2 = 16`, what is :math:`x`?
+
+    a. 4
+    b. an integer
+    c. 3
+    d. an irrational number
+    e. -3
+    f. -5
+
+  .. pick-any::
+    :required:
+    
+    You must select "yes".
+    
+    a. Yes
+
