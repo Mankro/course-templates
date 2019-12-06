@@ -2,7 +2,11 @@
 version: 2
 
 steps:
-  - img: apluslms/compile-rst:1.6
-    cmd: make touchrst html
+#  - img: apluslms/compile-rst:1.6
+#    cmd: make touchrst html
+#    mnt: /compile
+#    env: {STATIC_CONTENT_HOST: "http://localhost:8080/static/default"}
+  - img: apluslms/compile-presentation:latest
+    cmd: -y presentation_config.yaml -t "Otsikko komentorivilla"
+#    cmd: presentation_maker -c . -y presentation_config.yaml
     mnt: /compile
-    env: {STATIC_CONTENT_HOST: "http://localhost:8080/static/default"}

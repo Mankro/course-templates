@@ -30,7 +30,8 @@ static_host = os.environ.get('STATIC_CONTENT_HOST')
 # The internal IP address of the ACOS container should be used in local testing
 # and in production, the URL of the ACOS production server.
 #acos_submit_base_url = 'https://acos.cs.aalto.fi'
-acos_submit_base_url = 'http://172.21.0.4:3000'
+#acos_submit_base_url = 'http://172.21.0.4:3000'
+acos_submit_base_url = 'http://acos:3000'
 
 # The JavaScript code used by the enrollment questionnaire is hosted in the course repo,
 # so we need to know the course key in order to craft the URL of the JS.
