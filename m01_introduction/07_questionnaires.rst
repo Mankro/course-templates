@@ -391,8 +391,8 @@ after answering. See the example below.
 Examples
 --------
 
-.. questionnaire:: questionnaire_test_pick_random A
-  :title: Test pick randomly in a questionnaire
+.. questionnaire:: questionnaire_test_pick_random3 A
+  :title: Test links in a questionnaire
   :submissions: 50
 
   **TESTING LINKS**: 
@@ -599,8 +599,8 @@ copied from rst-tools README
     *f. 9
     g. 8
 
-.. questionnaire:: questionnaire_test_pick_random2 A
-  :title: Test pick randomly in a questionnaire 2
+.. questionnaire:: questionnaire_test_pick_random4 A
+  :title: Test pick randomly in a questionnaire 4
   :submissions: 50
   :pick_randomly: 4
 
@@ -665,7 +665,7 @@ copied from rst-tools README
     f. 9
     *g. 8
 
-.. questionnaire:: test_random_question
+.. questionnaire:: test_random_question2
   :submissions: 40
   :points-to-pass: 0
 
@@ -741,7 +741,7 @@ copied from rst-tools README
     u. lemon
 
 
-.. questionnaire:: test_random_question2
+.. questionnaire:: test_random_question3
   :submissions: 40
   :points-to-pass: 0
 
@@ -867,7 +867,7 @@ copied from rst-tools README
     red|blue
 
 
-.. questionnaire:: questionnaire_demo
+.. questionnaire:: questionnaire_demo2
   :title: A simple multiple-choice questionnaire
   :submissions: 6
   :allow-assistant-grading: true
