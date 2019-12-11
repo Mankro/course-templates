@@ -60,6 +60,9 @@ programs that create random instances.
 .. submit:: personalized_python 10
   :config: exercises/personalized_python/config.yaml
 
+.. submit:: personalized_binary_file 10
+  :config: exercises/personalized_binary/config.yaml
+
 
 Detailed description of the "Personalized number" exercise
 ----------------------------------------------------------

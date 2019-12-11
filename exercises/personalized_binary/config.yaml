@@ -1,0 +1,30 @@
+---
+title: Personalized binary file
+max_points: 10
+instructions: |
+  <p>
+    Your personalized instance is a binary file. You must submit the number 1.
+  </p>
+view_type: access.types.stdasync.acceptPost
+fields:
+  - name: solution
+    title: Solution
+    required: True
+
+#template: ./exercises/personalized_binary/template.html
+
+personalized: True
+generated_files:
+  - file: mydata
+    key: mydata
+    content_in_template: False
+    url_in_template: True
+    allow_download: True
+generator:
+  cmd: [ "python3", "generator.py" ]
+  cwd: exercises/personalized_binary/
+
+container:
+  image: apluslms/grade-python:3.7-3.2.3-3.0
+  mount: exercises/personalized_binary
+  cmd: /exercise/run.sh
