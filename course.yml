@@ -6,7 +6,7 @@ steps:
 #    cmd: make touchrst html
 #    mnt: /compile
 #    env: {STATIC_CONTENT_HOST: "http://localhost:8080/static/default"}
-  - img: apluslms/compile-presentation:latest
-    cmd: -y presentation_config.yaml -t "Otsikko komentorivilla"
-#    cmd: presentation_maker -c . -y presentation_config.yaml
+  - img: apluslms/presentation-maker:latest
+    cmd: -y "presentation_config.yaml"
+#    cmd: presentation_maker -c . -y presentation_config.yaml --pdf --html2pdf
     mnt: /compile

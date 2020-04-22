@@ -36,8 +36,7 @@ in A+.
 .. point-of-interest:: Try math
   :id: instr2
   
-  Subheading in my body
-  ---------------------
+  **Bolded non-Subheading in my body**
 
   Foo bar. Hadh qwehsd asdasdio jioasd.
   Mathematics like :math:`a + b * 6` and a display equation next:

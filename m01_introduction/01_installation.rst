@@ -52,6 +52,37 @@ used on some computer science courses on Aalto University.
   ===== =====
 
 
+.. point-of-interest:: Column-row example in m01-01
+  :id: excolrow
+
+  .. row::
+
+    .. column::
+      :width: 8
+      :column-class: bg-warning
+
+      col-8
+
+      .. row::
+
+        .. column::
+          :width: 6
+          :column-class: bg-light
+
+          col-6
+
+        .. column::
+          :width: 6
+          :column-class: bg-secondary
+
+          col-6
+
+    .. column::
+      :width: 4
+      :column-class: bg-success
+
+      col-4
+
 Getting started
 ---------------
 
