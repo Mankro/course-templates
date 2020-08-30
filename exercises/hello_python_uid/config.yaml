@@ -1,0 +1,25 @@
+---
+title: Hello Python with UID!
+description: |
+    A simple grading example with Python code.
+    The user's ID is saved to the submission directory in a custom view type.
+cacheable: False # exercise description contains personalized content
+instructions: |
+    <p>
+        In this exercise you must implement a function <var>hello</var>
+        that returns a string "<samp>Hello UID!</samp>".
+        Replace UID with your personal UID value.
+    </p>
+
+template: ./exercises/hello_python_uid/template_uid.html
+# custom view type function that saves the UID to
+# the submission directory that is accessible to the grading container
+view_type: .custom_view_types.acceptGeneralFormAndSaveUidToSdir
+files:
+  - field: file1
+    name: functions.py
+
+container:
+  image: apluslms/grade-python:3.7-3.3-3.1u1
+  mount: exercises/hello_python_uid
+  cmd: /exercise/run.sh

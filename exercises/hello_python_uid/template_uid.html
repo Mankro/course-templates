@@ -1,0 +1,31 @@
+{% extends 'access/exercise_frame.html' %}
+{% load i18n %}
+
+{% comment %}
+Copied from mooc-grader/access/templates/access/accept_general_default.html and
+slightly modified in order to add the custom uid variable.
+{% endcomment %}
+
+{% block exercise %}
+{% if not result.error %}
+{% if exercise.instructions %}
+<div class="instructions">
+  {{ exercise.instructions|safe }}
+</div>
+  {% if exercise.instructions_file %}
+    {% include exercise.instructions_file %}
+  {% endif %}
+{% elif exercise.instructions_file %}
+    {% include exercise.instructions_file %}
+{% else %}
+<h1>{% trans "Enter your submission" %}</h1>
+{% endif %}
+
+<p>Your UID is: <samp>{{ uid }}</samp></p>
+
+{% include 'access/personalized_content_default.html' %}
+
+{% include 'access/accept_general_form.html' %}
+{% endif %}
+{% endblock %}
+

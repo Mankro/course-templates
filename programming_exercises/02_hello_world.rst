@@ -1,6 +1,9 @@
 Hello Worlds
 ============
 
+.. submit:: hello_python_uid 10
+  :config: exercises/hello_python_uid/config.yaml
+
 This chapter includes three exercises on one page. Questionnaires and
 submission forms can exist anywhere and as many on one page as required.
 The automatic assessment of a submission is defined in the referenced
