@@ -18,8 +18,8 @@ import os
 
 
 # -- Aplus configuration --------------------------------------------------
-course_open_date = '2016-06-01'
-course_close_date = '2020-06-06'
+course_open_date = '2019-06-01'
+course_close_date = '2023-06-06'
 questionnaire_default_submissions = 5
 program_default_submissions = 10
 default_max_group_size = 1
@@ -65,6 +65,7 @@ extensions = [
     'aplus_setup',
     'media',
     'point_of_interest',
+    'row',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
